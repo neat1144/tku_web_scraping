@@ -1,0 +1,2549 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<!--練習區滑鼠跟隨游標CSS設定及是否「練習區」-->
+<!--練習區滑鼠跟隨游標CSS設定及是否「練習區」-->
+<style>
+ input:focus {
+    color: #495057;
+    border-color: #80bdff;
+    outline: 0;
+    box-shadow: 0 0 0 0.2rem rgb(0 123 255 / 25%);
+}
+
+textarea:focus {
+    color: #495057;
+    background-color: #fff;
+    border-color: #80bdff;
+    outline: 0;
+    box-shadow: 0 0 0 0.2rem rgb(0 123 255 / 25%);
+}
+
+select:focus-visible {
+    color: #495057;
+    background-color: #fff;
+    border-color: #80bdff;
+    outline: 0;
+    box-shadow: 0 0 0 0.2rem rgb(0 123 255 / 25%);
+}
+</style>
+<html lang="zh-tw" xml:lang="zh-tw">
+ <head>
+  <meta charset="utf-8"/>
+  <meta content="IE=edge" http-equiv="X-UA-Compatible"/>
+  <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+  <meta content="/prkms/images/icon.gif" property="og:image"/>
+  <title>
+   政府電子採購網
+  </title>
+  <link href="/prkms/images/icon.gif" rel="icon"/>
+  <link href="/prkms/css/all.css" rel="stylesheet" type="text/css">
+   <link href="/prkms/css/bootstrap.css" rel="stylesheet" type="text/css"/>
+   <link href="/prkms/css/v2/font-awesome/css/font-awesome.css" rel="stylesheet"/>
+   <link href="/prkms/css/tab_menu.css" rel="stylesheet" type="text/css"/>
+   <link href="/prkms/css/tab.css" rel="stylesheet" type="text/css"/>
+   <link href="/prkms/css/index_tab.css" rel="stylesheet" type="text/css"/>
+   <!--首頁最上方下拉選單-->
+   <link href="/prkms/css/g.css" rel="stylesheet" type="text/css"/>
+   <link href="/prkms/css/tps.css" rel="stylesheet" type="text/css"/>
+   <link href="/prkms/css/lb.css" rel="stylesheet" type="text/css"/>
+   <script src="/prkms/js/calendar.js">
+   </script>
+   <!--日期-->
+   <script src="/prkms/js/jquery-3.5.0.min.js">
+   </script>
+   <!--函式庫-->
+   <script src="/prkms/js/tab.js">
+   </script>
+   <!--頁簽-->
+   <script src="/prkms/js/menu.js" type="text/javascript">
+   </script>
+   <!--下拉選單-->
+   <script src="/prkms/js/index_tab.js" type="text/javascript">
+   </script>
+   <!--首頁最上方下拉選單-->
+   <script src="/prkms/js/jquery.blockUI.js">
+   </script>
+   <script src="/prkms/js/jquery.validate.min.js" type="text/javascript">
+   </script>
+   <script src="/prkms/js/additional-methods.js" type="text/javascript">
+   </script>
+   <script src="/prkms/js/jquery.SuperSlide.2.1.1.js" type="text/javascript">
+   </script>
+   <script src="/prkms/js/main.js" type="text/javascript">
+   </script>
+   <script src="/prkms/js/jquery.maphilight.js" type="text/javascript">
+   </script>
+   <script src="/prkms/js/tps.js" type="text/javascript">
+   </script>
+   <script src="/prkms/js/main.bundle.js" type="text/javascript">
+   </script>
+   <meta content="_RsXySMeLvSPD4xblNnXL5YTiToz0qucp2NflC2YnO8" name="google-site-verification"/>
+  </link>
+ </head>
+ <body style="background:#ddd5b8">
+  <!--TOP-->
+  <div class="top">
+   <noscript>
+    <td style="color:red;">
+     您的瀏覽器不支援JavaScript功能，若網頁功能無法正常使用時，請開啟瀏覽器JavaScript狀態
+    </td>
+   </noscript>
+   <style>
+    .sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border: 0;
+}
+
+.sr-only-focusable:active, .sr-only-focusable:focus {
+  position: static;
+  width: auto;
+  height: auto;
+  overflow: visible;
+  clip: auto;
+  white-space: normal;
+}
+   </style>
+   <!--TOP-->
+   <div class="top">
+    <div class="top_a">
+     <div class="top_a_cen">
+      <div class="top_a_l">
+       <ul>
+        <li>
+         <a class="sr-only sr-only-focusable" href="#content" tabindex="5">
+          <span style="color:#FFFFFF;background-color:#81b1c9;margin-right:5px;Opacity:80;">
+           中央內容區塊
+          </span>
+         </a>
+        </li>
+        <!--上方內容導盲磚-->
+        <li>
+         <a accesskey="U" class="guide" href="#U" id="AU" name="U" tabindex="0" title="上方功能區塊">
+          :::
+         </a>
+        </li>
+        <li>
+         <a href="/pis/" title="回首頁">
+          回首頁
+         </a>
+        </li>
+        <li>
+         <a href="/pis/prac/sitemapClient/readG3Sitemap" title="網站導覽">
+          網站導覽
+         </a>
+        </li>
+        <li>
+         <a href="/qdcs/webmobile/Home" title="行動版">
+          行動版
+         </a>
+        </li>
+        <li>
+         <a href="/tps/QueryTender/query/queryEng?mode=" title="ENGLISH">
+          ENGLISH
+         </a>
+        </li>
+        <li>
+         <a href="/pis/pia/client/mail" title="意見信箱">
+          意見信箱
+         </a>
+        </li>
+        <!-- 			<li><a  href="/csci/pf/feedback" title="試辦問題回報">試辦問題回報</a></li> -->
+       </ul>
+      </div>
+      <div class="top_a_r">
+       <div class="top_a_r_1">
+        <a href="https://web.pcc.gov.tw/pis/" title="前往正式區的按鈕">
+         <img alt="前往正式區的按鈕" src="/prkms/images/r_btn1.png"/>
+        </a>
+       </div>
+       <div class="top_a_r_2">
+        <a href="https://webtest.pcc.gov.tw/pis/" title="前往練習區的按鈕">
+         <img alt="前往練習區的按鈕" src="/prkms/images/r_btn2.png"/>
+        </a>
+       </div>
+      </div>
+     </div>
+    </div>
+    <div class="top_b">
+     <h1>
+      政府電子採購網
+     </h1>
+    </div>
+    <!--BANNER-->
+    <div class="top_c">
+     <div class="top_ca">
+      <div class="nav">
+       <ul class="menu">
+        <!--第一階選項 -->
+        <li class="li_tp fix_menu">
+         <a class="bind_menu_a" data-layerid="layer1" href="#">
+          網站導覽
+         </a>
+        </li>
+        <!--第一階選項結束 -->
+        <div class="sub_menu bind_menu_a" data-layerid="layer1" id="layer1" style="display: none;">
+         <i>
+         </i>
+         <div class="sub_area clearfix" style="margin-bottom:20px">
+          <!--第二階選項 -->
+          <ul class="sub_nav list" style="margin-bottom:20px">
+           <li class="li_tp tm">
+            <a class="tmc">
+             網站導覽
+            </a>
+            <!--第三階選項 -->
+            <ul class="sub02">
+             <li class="tpb_a">
+              <a class="tmd" href="/pis/prac/sitemapClient/readG3Sitemap">
+               網站導覽(三代)
+              </a>
+             </li>
+             <li class="tpb_a">
+              <a class="tmd" href="/pis/prac/sitemapClient/readG2Sitemap">
+               網站導覽(二代)
+              </a>
+             </li>
+            </ul>
+            <!--第三階選項結束 -->
+           </li>
+          </ul>
+          <!--第二階選項結束 -->
+         </div>
+        </div>
+        <!--第一階選項 -->
+        <li class="li_tp fix_menu">
+         <a class="bind_menu_a" data-layerid="layer2" href="#">
+          學習資源
+         </a>
+        </li>
+        <!--第一階選項結束 -->
+        <div class="sub_menu bind_menu_a" data-layerid="layer2" id="layer2" style="display: none;">
+         <i>
+         </i>
+         <div class="sub_area clearfix" style="margin-bottom:20px">
+          <!--第二階選項 -->
+          <ul class="sub_nav list" style="margin-bottom:20px">
+           <li class="li_tp tm">
+            <a class="tmc">
+             教育訓練
+            </a>
+            <!--第三階選項 -->
+            <ul class="sub02">
+             <li class="tpb_a">
+              <a class="tmd" href="/ol/entityCourse/index">
+               機關端(線上報名)
+              </a>
+             </li>
+             <li class="tpb_a">
+              <a class="tmd" href="/ol/trgEnroll/index">
+               廠商端(線上報名)
+              </a>
+             </li>
+            </ul>
+            <!--第三階選項結束 -->
+           </li>
+          </ul>
+          <ul class="sub_nav list" style="margin-bottom:20px">
+           <li class="li_tp tm">
+            <a class="tmc">
+             線上學習
+            </a>
+            <!--第三階選項 -->
+            <ul class="sub02">
+             <li class="tpb_a">
+              <a class="tmd" href="/qdcs/trainingIndex">
+               線上教學
+              </a>
+             </li>
+            </ul>
+            <!--第三階選項結束 -->
+           </li>
+          </ul>
+          <ul class="sub_nav list" style="margin-bottom:20px">
+           <li class="li_tp tm">
+            <a class="tmc">
+             教學資料(下載專區)
+            </a>
+            <!--第三階選項 -->
+            <ul class="sub02">
+             <li class="tpb_a">
+              <a class="tmd" href="/pis/prac/downloadGroupClient/readDownloadGroupClient?id=20000003">
+               系統使用手冊
+              </a>
+             </li>
+             <li class="tpb_a">
+              <a class="tmd" href="/pis/prac/downloadGroupClient/readDownloadGroupClient?id=60000731">
+               三代採購網教育訓練教材
+              </a>
+             </li>
+             <li class="tpb_a">
+              <a class="tmd" href="/pis/prac/downloadGroupClient/readDownloadGroupClient?id=60000736">
+               三代教學影片
+              </a>
+             </li>
+             <li class="tpb_a">
+              <a class="tmd" href="/pis/prac/downloadGroupClient/getClientDownloadForDownloadFile?id=70000016">
+               環境檢測安裝步驟及FAQ
+              </a>
+             </li>
+             <li class="tpb_a">
+              <a class="tmd" href="/pis/prac/downloadGroupClient/getClientDownloadForDownloadFile?id=70000015">
+               用戶端程式偵測障礙排除
+              </a>
+             </li>
+             <li class="tpb_a">
+              <a class="tmd" href="/pis/prac/downloadGroupClient/readPreparation">
+               第一次使用三代政府電子採購網之前置作業
+              </a>
+             </li>
+            </ul>
+            <!--第三階選項結束 -->
+           </li>
+          </ul>
+          <ul class="sub_nav list" style="margin-bottom:20px">
+           <li class="li_tp tm">
+            <a class="tmc">
+             採購專業人員訓練
+            </a>
+            <!--第三階選項 -->
+            <ul class="sub02">
+             <li class="tpb_a">
+              <a class="tmd" href="/psms/pptom/pptomPublic/indexRead">
+               代訓機構名單
+              </a>
+             </li>
+             <li class="tpb_a">
+              <a class="tmd" href="/psms/pptcm/pptcmPublic/indexReadPptcm">
+               代訓機構開課
+              </a>
+             </li>
+             <li class="tpb_a">
+              <a class="tmd" href="/psms/plrtqdm/questionPublic/indexReadQuestion">
+               採購法規題庫
+              </a>
+             </li>
+             <li class="tpb_a">
+              <a class="tmd" href="/psms/plrtm/plrtmQuery/indexReadCertificate">
+               採購專業人員及格證書查詢
+              </a>
+             </li>
+             <li class="tpb_a">
+              <a class="tmd" href="/psms/plrtm/plrtmReissue/certificateReissue">
+               採購專業人員及格證書補發申請
+              </a>
+             </li>
+            </ul>
+            <!--第三階選項結束 -->
+           </li>
+          </ul>
+          <!--第二階選項結束 -->
+         </div>
+        </div>
+        <!--第一階選項 -->
+        <li class="li_tp fix_menu">
+         <a class="bind_menu_a" data-layerid="layer3" href="#">
+          採購作業
+         </a>
+        </li>
+        <!--第一階選項結束 -->
+        <div class="sub_menu bind_menu_a" data-layerid="layer3" id="layer3" style="display: none;">
+         <i>
+         </i>
+         <div class="sub_area clearfix" style="margin-bottom:20px">
+          <!--第二階選項 -->
+          <ul class="sub_nav list" style="margin-bottom:20px">
+           <li class="li_tp tm">
+            <a class="tmc">
+             標案查詢
+            </a>
+            <!--第三階選項 -->
+            <ul class="sub02">
+             <li class="tpb_a">
+              <a class="tmd" href="#" onclick="goTender()">
+               標案查詢
+              </a>
+             </li>
+            </ul>
+            <!--第三階選項結束 -->
+           </li>
+          </ul>
+          <ul class="sub_nav list" style="margin-bottom:20px">
+           <li class="li_tp tm">
+            <a class="tmc">
+             等標期
+            </a>
+            <!--第三階選項 -->
+            <ul class="sub02">
+             <li class="tpb_a">
+              <a class="tmd" href="/pis/prac/declarationClient/bWait">
+               等標期
+              </a>
+             </li>
+            </ul>
+            <!--第三階選項結束 -->
+           </li>
+          </ul>
+          <ul class="sub_nav list" style="margin-bottom:20px">
+           <li class="li_tp tm">
+            <a class="tmc">
+             電子公報
+            </a>
+            <!--第三階選項 -->
+            <ul class="sub02">
+             <li class="tpb_a">
+              <a class="tmd" href="/ebm/public/EbmMain/indexEbmMain">
+               電子公報
+              </a>
+             </li>
+            </ul>
+            <!--第三階選項結束 -->
+           </li>
+          </ul>
+          <!--第二階選項結束 -->
+         </div>
+        </div>
+        <!--第一階選項 -->
+        <li class="li_tp fix_menu">
+         <a class="bind_menu_a" data-layerid="layer4" href="#">
+          查詢服務
+         </a>
+        </li>
+        <!--第一階選項結束 -->
+        <div class="sub_menu bind_menu_a" data-layerid="layer4" id="layer4" style="display: none;">
+         <i>
+         </i>
+         <div class="sub_area clearfix" style="margin-bottom:20px">
+          <!--第二階選項 -->
+          <ul class="sub_nav list" style="margin-bottom:20px">
+           <li class="li_tp tm">
+            <a class="tmc">
+             標案相關
+            </a>
+            <!--第三階選項 -->
+            <ul class="sub02">
+             <li class="tpb_a">
+              <a class="tmd" href="#" onclick="goTender()">
+               標案查詢
+              </a>
+             </li>
+             <li class="tpb_a">
+              <a class="tmd" href="/prkms/gpaPredict/common/indexGpaPredict">
+               採購預告查詢
+              </a>
+             </li>
+             <li class="tpb_a">
+              <a class="tmd" href="/prkms/tpRead/common/indexTpRead">
+               公開閱覽查詢
+              </a>
+             </li>
+             <li class="tpb_a">
+              <a class="tmd" href="/prkms/tpAppeal/common/indexTpAppeal">
+               公開徵求查詢
+              </a>
+             </li>
+             <li class="tpb_a">
+              <a class="tmd" href="/opas/pspad/pspadClient/readPublicPspadListInit">
+               公示送達查詢
+              </a>
+             </li>
+             <li class="tpb_a">
+              <a class="tmd" href="/cscps/ciom/medicineSearch">
+               衛材藥品查詢
+              </a>
+             </li>
+             <li class="tpb_a">
+              <a class="tmd" href="/prkms/priority/common/indexTenderPriority">
+               優先採購查詢
+              </a>
+             </li>
+             <li class="tpb_a">
+              <a class="tmd" href="/osm/public/proctrg">
+               採購標的分類
+              </a>
+             </li>
+            </ul>
+            <!--第三階選項結束 -->
+           </li>
+          </ul>
+          <ul class="sub_nav list" style="margin-bottom:20px">
+           <li class="li_tp tm">
+            <a class="tmc">
+             財物相關
+            </a>
+            <!--第三階選項 -->
+            <ul class="sub02">
+             <li class="tpb_a">
+              <a class="tmd" href="/opas/arpam/public/indexArpam">
+               財物出租查詢
+              </a>
+             </li>
+             <li class="tpb_a">
+              <a class="tmd" href="/opas/aspam/public/indexAspam">
+               財物變賣查詢
+              </a>
+             </li>
+             <li class="tpb_a">
+              <a class="tmd" href="/tps/pia/PiaPriceWithoutSsoController/query/commonPiaPriceSearch">
+               物調公告查詢
+              </a>
+             </li>
+            </ul>
+            <!--第三階選項結束 -->
+           </li>
+          </ul>
+          <ul class="sub_nav list" style="margin-bottom:20px">
+           <li class="li_tp tm">
+            <a class="tmc">
+             國外採購
+            </a>
+            <!--第三階選項 -->
+            <ul class="sub02">
+             <li class="tpb_a">
+              <a class="tmd" href="https://gpa.taiwantrade.com.tw/zh/home" target="_blank" title="前往全球政府採購商機(另開頁面)">
+               全球政府採購商機
+              </a>
+             </li>
+             <li class="tpb_a">
+              <a class="tmd" href="https://www.pcc.gov.tw/cp.aspx?n=49F759CB03E9FCFF" target="_blank" title="前往外國政府採購網站(另開頁面)">
+               外國政府採購網站
+              </a>
+             </li>
+             <li class="tpb_a">
+              <a class="tmd" href="/prkms/foreignGov/common/indexTenderForeignGov" title="前往外國政府採購商情">
+               外國政府採購商情
+              </a>
+             </li>
+            </ul>
+            <!--第三階選項結束 -->
+           </li>
+          </ul>
+          <ul class="sub_nav list" style="margin-bottom:20px">
+           <li class="li_tp tm">
+            <a class="tmc">
+             廠商相關
+            </a>
+            <!--第三階選項 -->
+            <ul class="sub02">
+             <li class="tpb_a">
+              <a class="tmd" href="/osm/public/foreSupp">
+               外國廠商代碼
+              </a>
+             </li>
+             <li class="tpb_a">
+              <a class="tmd" href="/vms/stiem/stiemPublic/indexSearchPublic">
+               科技研究機構
+              </a>
+             </li>
+             <li class="tpb_a">
+              <a class="tmd" href="/peems/lapeem/lapeemGeneralQuery">
+               效益評估查詢
+              </a>
+             </li>
+             <li class="tpb_a">
+              <a class="tmd" href="/vms/jgvm/jgvmPublic/indexReadJgvmPublic">
+               連帶保證廠商
+              </a>
+             </li>
+             <li class="tpb_a">
+              <a class="tmd" href="/vms/emlm/emlmPublicSearch/indexSearchEmlmPublic">
+               優良廠商名單
+              </a>
+             </li>
+             <li class="tpb_a">
+              <a class="tmd" href="/vms/rvlm/rvlmPublicSearch/indexSearchRvlmPublic">
+               拒絕往來廠商
+              </a>
+             </li>
+             <li class="tpb_a">
+              <a class="tmd" href="/vms/rvlm/rvlmPublicSearchRevoked/indexSearchRevokedRvlmPublic">
+               註銷拒絕往來廠商
+              </a>
+             </li>
+             <li class="tpb_a">
+              <a class="tmd" href="/vms/gblm/gblmPublicSearch/indexSearchGblmPublic">
+               全球化廠商名單
+              </a>
+             </li>
+             <li class="tpb_a">
+              <a class="tmd" href="/vms/gblm/gblmPublicCompositeSearch/indexCompositeSearch">
+               廠商綜合查詢
+              </a>
+             </li>
+             <li class="tpb_a">
+              <a class="tmd" href="/tps/tom/obtainment/common/printTokenPublic/printVerifyToken">
+               列印領標憑據
+              </a>
+             </li>
+             <li class="tpb_a">
+              <a class="tmd" href="/qdcs/yellowPageQuery">
+               廠商名錄
+              </a>
+             </li>
+             <li class="tpb_a">
+              <a class="tmd" href="/piat/dispute/oneOOne/indexSearch">
+               政府採購法第101條停權案例
+              </a>
+             </li>
+            </ul>
+            <!--第三階選項結束 -->
+           </li>
+          </ul>
+          <ul class="sub_nav list" style="margin-bottom:20px">
+           <li class="li_tp tm">
+            <a class="tmc">
+             其他
+            </a>
+            <!--第三階選項 -->
+            <ul class="sub02">
+             <li class="tpb_a">
+              <a class="tmd" href="/prkms/rebuild/common/indexRebuild">
+               災區重建工程案件查詢
+              </a>
+             </li>
+             <li class="tpb_a">
+              <a class="tmd" href="/peems/lapeem/lapeemGeneralPolit">
+               政治獻金法第七條查詢
+              </a>
+             </li>
+             <li class="tpb_a">
+              <a class="tmd" href="/tps/common/atmAbroad/commonSearchAtmAbroad/search">
+               得標外國政府採購案件查詢
+              </a>
+             </li>
+             <li class="tpb_a">
+              <a class="tmd" href="/tps/tom/thdTender/query/enterToThdTender">
+               歷史文件瀏覽
+              </a>
+             </li>
+             <li class="tpb_a">
+              <a class="tmd" href="/pec/PecQueryPublic/indexPecQueryPublicInit">
+               採購評選委員名單
+              </a>
+             </li>
+             <li class="tpb_a">
+              <a class="tmd" href="/wr-report/wr/homeClient/list">
+               採購統計
+              </a>
+             </li>
+             <li class="tpb_a">
+              <a class="tmd" href="/pis/bsmizone/readBsmizone">
+               商品檢驗查詢
+              </a>
+             </li>
+            </ul>
+            <!--第三階選項結束 -->
+           </li>
+          </ul>
+          <!--第二階選項結束 -->
+         </div>
+        </div>
+        <!--第一階選項 -->
+        <li class="li_tp fix_menu">
+         <a class="bind_menu_a" data-layerid="layer5" href="#">
+          下載專區
+         </a>
+        </li>
+        <!--第一階選項結束 -->
+        <div class="sub_menu bind_menu_a" data-layerid="layer5" id="layer5" style="display: none;">
+         <i>
+         </i>
+         <div class="sub_area clearfix" style="margin-bottom:20px">
+          <!--第二階選項 -->
+          <ul class="sub_nav list" style="margin-bottom:20px">
+           <li class="li_tp tm">
+            <a class="tmc">
+             下載專區
+            </a>
+            <!--下載專區 > 下載專區 > 第三階選項 -->
+            <ul class="sub02">
+             <li class="tpb_a">
+              <a class="tmd" href="/pis/prac/declarationClient/bWait" target="_blank" title="前往等標期(另開頁面)">
+               等標期
+              </a>
+             </li>
+             <li class="tpb_a">
+              <a class="tmd" href="/pis/prac/downloadGroupClient/readDownloadGroupClient?id=50003004" title="前往拒絕往來名單">
+               拒絕往來名單
+              </a>
+             </li>
+             <li class="tpb_a">
+              <a class="tmd" href="https://www.pcc.gov.tw/cp.aspx?n=99E24DAAC84279E4" target="_blank" title="前往招標文件範本(另開頁面)">
+               招標文件範本
+              </a>
+             </li>
+             <li class="tpb_a">
+              <a class="tmd" href="/pis/prac/downloadGroupClient/readDownloadGroupClient?id=42000000" title="前往共同供應契約">
+               共同供應契約
+              </a>
+             </li>
+             <li class="tpb_a">
+              <a class="tmd" href="/pis/prac/downloadGroupClient/readDownloadGroupClient?id=20000003" title="前往系統使用手冊">
+               系統使用手冊
+              </a>
+             </li>
+             <li class="tpb_a">
+              <a class="tmd" href="/pis/prac/downloadGroupClient/readDownloadGroupClient?id=60000736" title="前往三代教學影片">
+               三代教學影片
+              </a>
+             </li>
+             <li class="tpb_a">
+              <a class="tmd" href="/pis/prac/downloadGroupClient/readDownloadGroupClient?id=20000004" title="前往常用工具下載">
+               常用工具下載
+              </a>
+             </li>
+             <li class="tpb_a">
+              <a class="tmd" href="/pis/prac/downloadGroupClient/readDownloadGroupClient?id=60000731" title="前往教育訓練教材">
+               教育訓練教材
+              </a>
+             </li>
+             <li class="tpb_a">
+              <a class="tmd" href="/pis/prac/downloadGroupClient/readDownloadGroupClient?id=70000000" title="前往安裝程式環境檢測及障礙排除說明">
+               安裝程式環境檢測及障礙排除說明
+              </a>
+             </li>
+             <li class="tpb_a">
+              <a class="tmd" href="/tps/tp/OpenData/showList" target="_blank" title="前往資料集下載(另開頁面)">
+               資料集下載
+              </a>
+             </li>
+             <li class="tpb_a">
+              <a class="tmd" href="/pis/prac/downloadGroupClient/readDownloadGroupClient?id=60000716" title="前往帳號處理">
+               帳號處理
+              </a>
+             </li>
+             <li class="tpb_a">
+              <a class="tmd" href="/pis/prac/downloadGroupClient/readDownloadGroupClient?id=50003000" title="前往重要訊息通告">
+               重要訊息通告
+              </a>
+             </li>
+             <li class="tpb_a">
+              <a class="tmd" href="/pis/prac/downloadGroupClient/readDownloadGroupClient?id=70000026" title="前往ODF專區">
+               ODF專區
+              </a>
+             </li>
+             <li class="tpb_a">
+              <a class="tmd" href="/pis/prac/downloadGroupClient/readDownloadGroupClient?id=50003006" title="前往中央組改文件 ">
+               中央組改文件
+              </a>
+             </li>
+             <li class="tpb_a">
+              <a class="tmd" href="/pis/prac/downloadGroupClient/readDownloadGroupClient?id=50003002" title="前往５都改制文件">
+               ５都改制文件
+              </a>
+             </li>
+            </ul>
+            <!--下載專區 > 下載專區 > 第三階選項結束 -->
+           </li>
+          </ul>
+          <!--第二階選項結束 -->
+         </div>
+        </div>
+        <!--第一階選項 -->
+        <li class="li_tp fix_menu">
+         <a class="bind_menu_a" data-layerid="layer6" href="#">
+          相關連結
+         </a>
+        </li>
+        <!--第一階選項結束 -->
+        <div class="sub_menu bind_menu_a" data-layerid="layer6" id="layer6" style="display: none;">
+         <i>
+         </i>
+         <div class="sub_area clearfix" style="margin-bottom:20px">
+          <!--第二階選項 -->
+          <ul class="sub_nav list" style="margin-bottom:20px">
+           <li class="li_tp tm">
+            <a class="tmc">
+             憑證
+            </a>
+            <!--第三階選項 -->
+            <ul class="sub02">
+             <li class="tpb_a">
+              <a class="tmd" href="https://gcp.nat.gov.tw/" target="_blank" title="前往政府憑證管理中心(另開頁面)">
+               政府憑證管理中心
+              </a>
+             </li>
+             <li class="tpb_a">
+              <a class="tmd" href="https://moeaca.nat.gov.tw/" target="_blank" title="前往工商憑證管理中心(另開頁面)">
+               工商憑證管理中心
+              </a>
+             </li>
+             <li class="tpb_a">
+              <a class="tmd" href="https://moica.nat.gov.tw/main.html" target="_blank" title="前往自然人憑證管理中心(另開頁面)">
+               自然人憑證管理中心
+              </a>
+             </li>
+             <li class="tpb_a">
+              <a class="tmd" href="https://xca.nat.gov.tw/" target="_blank" title="前往組織及團體憑證管理中心(另開頁面)">
+               組織及團體憑證管理中心
+              </a>
+             </li>
+             <li class="tpb_a">
+              <a class="tmd" href="https://fido.moi.gov.tw/pt/" target="_blank" title="前往內政部行動自然人憑證系統(另開頁面)">
+               內政部行動自然人憑證系統
+              </a>
+             </li>
+            </ul>
+            <!--第三階選項結束 -->
+           </li>
+          </ul>
+          <ul class="sub_nav list" style="margin-bottom:20px">
+           <li class="li_tp tm">
+            <a class="tmc">
+             行政院工程會全球資訊網
+            </a>
+            <!--第三階選項 -->
+            <ul class="sub02">
+             <li class="tpb_a">
+              <a class="tmd" href="https://www.pcc.gov.tw/" target="_blank" title="前往行政院工程會全球資訊網(另開頁面)">
+               行政院工程會全球資訊網
+              </a>
+             </li>
+            </ul>
+            <!--第三階選項結束 -->
+           </li>
+          </ul>
+          <ul class="sub_nav list" style="margin-bottom:20px">
+           <li class="li_tp tm">
+            <a class="tmc">
+             其他
+            </a>
+            <!--相關連結 > 其他 > 第三階選項 -->
+            <ul class="sub02">
+             <li class="tpb_a">
+              <a class="tmd" href="https://pcic.pcc.gov.tw/pwc-web/" target="_blank" title="前往工程標案管理系統(另開頁面)">
+               工程標案管理系統
+              </a>
+             </li>
+             <li class="tpb_a">
+              <a class="tmd" href="https://pcic.pcc.gov.tw/pwc-web/" target="_blank" title="前往工程延遲付款通報(另開頁面)">
+               工程延遲付款通報
+              </a>
+             </li>
+             <li class="tpb_a">
+              <a class="tmd" href="https://ppp.mof.gov.tw/WWW/inv_ann.aspx" target="_blank" title="前往促進民間參與公共建設公告(另開頁面)">
+               促進民間參與公共建設公告
+              </a>
+             </li>
+             <li class="tpb_a">
+              <a class="tmd" href="https://gcis.nat.gov.tw/mainNew/" target="_blank" title="前往經濟部商工行政服務入口網(另開頁面)">
+               經濟部商工行政服務入口網
+              </a>
+             </li>
+             <li class="tpb_a">
+              <a class="tmd" href="https://pcic.pcc.gov.tw/pwc-web/" target="_blank" title="前往技師與工程技術顧問公司管理資訊系統(另開頁面)">
+               技師與工程技術顧問公司管理資訊系統
+              </a>
+             </li>
+             <li class="tpb_a">
+              <a class="tmd" href="https://cloudbm.cpami.gov.tw/CPTL/" target="_blank" title="前往營建署全國建築管理資訊入口網(另開頁面)">
+               營建署全國建築管理資訊入口網
+              </a>
+             </li>
+             <li class="tpb_a">
+              <a class="tmd" href="https://www.etax.nat.gov.tw" target="_blank" title="前往財政部稅務入口網(另開頁面)">
+               財政部稅務入口網
+              </a>
+             </li>
+             <li class="tpb_a">
+              <a class="tmd" href="https://www.energylabel.org.tw/purchasing/govgreen/list.aspx" target="_blank" title="前往環保署節能標章綠色採購網(另開頁面)">
+               環保署節能標章綠色採購網
+              </a>
+             </li>
+             <li class="tpb_a">
+              <a class="tmd" href="https://dpws.sfaa.gov.tw/index.jsp" target="_blank" title="前往衛生福利部社會及家庭署身心障礙服務入口網(另開頁面)">
+               衛生福利部社會及家庭署身心障礙服務入口網
+              </a>
+             </li>
+             <li class="tpb_a">
+              <a class="tmd" href="https://socialcom.mohw.gov.tw/swalPublic/front/taIndex" target="_blank" title="前往衛生福利部社福人員勞動申訴及溝通平臺-違規停止補助名單(另開頁面)">
+               衛生福利部社福人員勞動申訴及溝通平臺-違規停止補助名單
+              </a>
+             </li>
+             <li class="tpb_a">
+              <a class="tmd" href="https://cloudbm.cpami.gov.tw/bccs/login" target="_blank" title="前往營建署工程重機械編管及運用管理系統(另開頁面)">
+               營建署工程重機械編管及運用管理系統
+              </a>
+             </li>
+             <li class="tpb_a">
+              <a class="tmd" href="/pis/srml/linkGroupClient/readLinkGroupClient?id=50003006" target="_blank" title="前往經濟部投審司公告陸資資訊">
+               經濟部投審司公告陸資資訊
+              </a>
+             </li>
+             <li class="tpb_a">
+              <a class="tmd" href="https://www.mine.gov.tw/" target="_blank" title="前往經濟部礦務局(另開頁面)">
+               經濟部礦務局
+              </a>
+             </li>
+             <li class="tpb_a">
+              <a class="tmd" href="https://pcic.pcc.gov.tw/pwc-web/service/bidCae001" target="_blank" title="前往承攬廠商公共工程履歷資料(另開頁面)">
+               承攬廠商公共工程履歷資料
+              </a>
+             </li>
+             <li class="tpb_a">
+              <a class="tmd" href="https://pcic.pcc.gov.tw/pwc-web/service/bidCab001" target="_blank" title="前往公共工程人員履歷查詢(另開頁面)">
+               公共工程人員履歷查詢
+              </a>
+             </li>
+             <li class="tpb_a">
+              <a class="tmd" href="https://pcic.pcc.gov.tw/pwc-web/service/eng0814Query" target="_blank" title="前往技師懲戒資料(另開頁面)">
+               技師懲戒資料
+              </a>
+             </li>
+             <li class="tpb_a">
+              <a class="tmd" href="https://cloudbm.cpami.gov.tw/CPTL/cpt0503m.do" target="_blank" title="前往內政部營建署營造業評鑑結果查詢(另開頁面)">
+               內政部營建署營造業評鑑結果查詢
+              </a>
+             </li>
+             <li class="tpb_a">
+              <a class="tmd" href="/pis/srml/linkGroupClient/readLinkGroupClient?id=50003007" target="_blank" title="前往行政法人相關採購資訊">
+               行政法人相關採購資訊
+              </a>
+             </li>
+             <li class="tpb_a">
+              <a class="tmd" href="https://ebuying.hinet.net" target="_blank" title="前往採購網加值服務訂閱(另開頁面)">
+               採購網加值服務訂閱
+              </a>
+             </li>
+             <li class="tpb_a">
+              <a class="tmd" href="https://ccs.hinet.net/line_pwd_cht_big5.htm" target="_blank" title="前往更改HiNet連線密碼(另開頁面)">
+               更改HiNet連線密碼
+              </a>
+             </li>
+             <li class="tpb_a">
+              <a class="tmd" href="https://e-pay.hinet.net/" target="_blank" title="前往HiNet點數卡購買(另開頁面)">
+               HiNet點數卡購買
+              </a>
+             </li>
+            </ul>
+            <!--相關連結 > 其他 > 第三階選項結束 -->
+           </li>
+          </ul>
+          <!--第二階選項結束 -->
+         </div>
+        </div>
+        <!--第一階選項 -->
+        <li class="li_tp fix_menu">
+         <a class="bind_menu_a" data-layerid="layer7" href="#">
+          請求協助
+         </a>
+        </li>
+        <!--第一階選項結束 -->
+        <div class="sub_menu bind_menu_a" data-layerid="layer7" id="layer7" style="display: none;">
+         <i>
+         </i>
+         <div class="sub_area clearfix" style="margin-bottom:20px">
+          <!--第二階選項 -->
+          <ul class="sub_nav list" style="margin-bottom:20px">
+           <li class="li_tp tm">
+            <a class="tmc">
+             熱門問答
+            </a>
+            <!--第三階選項 -->
+            <ul class="sub02">
+             <li class="tpb_a">
+              <a class="tmd" href="/csci/pf/readCsciFaqStatList">
+               熱門問答
+              </a>
+             </li>
+            </ul>
+            <!--第三階選項結束 -->
+           </li>
+          </ul>
+          <ul class="sub_nav list" style="margin-bottom:20px">
+           <li class="li_tp tm">
+            <a class="tmc">
+             問題檢索
+            </a>
+            <!--第三階選項 -->
+            <ul class="sub02">
+             <li class="tpb_a">
+              <a class="tmd" href="/csci/pf/readCsciFaqDetlList">
+               問題檢索
+              </a>
+             </li>
+            </ul>
+            <!--第三階選項結束 -->
+           </li>
+          </ul>
+          <ul class="sub_nav list" style="margin-bottom:20px">
+           <li class="li_tp tm">
+            <a class="tmc">
+             我要發問
+            </a>
+            <!--第三階選項 -->
+            <ul class="sub02">
+             <li class="tpb_a">
+              <a class="tmd" href="/csci/pf/feedback">
+               我要發問
+              </a>
+             </li>
+            </ul>
+            <!--第三階選項結束 -->
+           </li>
+          </ul>
+          <!--第二階選項結束 -->
+         </div>
+        </div>
+        <!--第一階選項 -->
+        <li class="li_tp fix_menu">
+         <a class="bind_menu_a" data-layerid="layer8" href="#">
+          最新功能
+         </a>
+        </li>
+        <!--第一階選項結束 -->
+        <div class="sub_menu bind_menu_a" data-layerid="layer8" id="layer8" style="display: none;">
+         <i>
+         </i>
+         <div class="sub_area clearfix" style="margin-bottom:20px">
+          <!--第二階選項 -->
+          <ul class="sub_nav list" style="margin-bottom:20px">
+           <li class="li_tp tm">
+            <a class="tmc">
+             最新功能
+            </a>
+            <!--第三階選項 -->
+            <ul class="sub02">
+             <li class="tpb_a">
+              <a class="tmd" href="/osm/public/newSysOn">
+               最新功能
+              </a>
+             </li>
+            </ul>
+            <!--第三階選項結束 -->
+           </li>
+          </ul>
+          <!--第二階選項結束 -->
+         </div>
+        </div>
+       </ul>
+      </div>
+     </div>
+    </div>
+   </div>
+   <!--TOPEND-->
+   <!--middle-->
+   <div class="middle_1">
+    <div class="middle_1_cen">
+     <!--首頁統計表 -->
+     <!--中間內容導盲磚-->
+     <a accesskey="C" class="guide" href="javascript:void(0);" id="AC" name="C" title="中間功能區塊">
+      :::
+     </a>
+     <div class="middle_2_info_1 mh20" id="loginBreadcrumbs">
+      <a class="t-link" href="/pis" title="首頁">
+       首頁
+      </a>
+      &gt;查詢服務 &gt;標案相關 &gt;
+      <a class="t-link" href="/prkms/tender/common/basic/indexTenderBasic" title="標案查詢 ">
+       標案查詢
+      </a>
+      &gt;
+      <a class="t-link" href="/prkms/tender/common/basic/indexTenderBasic" title="招標查詢">
+       招標查詢
+      </a>
+     </div>
+     <!--首頁統計表結束 -->
+     <div id="content">
+      <!-- 共用元件 -->
+      <script src="/ccs/dist/geps3-commons.bundle.js" type="text/javascript">
+      </script>
+      <link href="/prkms/css/g.css" rel="stylesheet" type="text/css"/>
+      <script>
+       window.onload = function(){
+	var errorMsg = "";
+	if(errorMsg.length > 0)
+		showCheckFailure(errorMsg);
+};
+      </script>
+      <!-- js -->
+      <div id="checkSearchFailure" style="display:none; cursor: default;text-align:center;">
+       <textarea id="failureMessage" readonly="" title="failureMessage"></textarea>
+       <br/>
+       <div class="bt_cen2">
+        <a href="##" onclick="$.unblockUI();" title="關閉">
+         關閉
+        </a>
+       </div>
+      </div>
+      <!-- css -->
+      <style>
+       <!-- 未登入 -->
+.dateLabel {
+    margin-right: 16px !important;
+}
+
+.fddd{
+    width: 20%;
+    position:relative;
+	margin-right: 0%;
+}
+
+
+.dateDiv{
+    display: inline-block
+}
+      </style>
+      <div class="middle_1_cen_big_full">
+       <!--快速連結-->
+       <div class="col-md-12">
+        <a href="/prkms/tender/common/basic/indexTenderBasic">
+         <div class="btn_8">
+          招標查詢
+         </div>
+        </a>
+        <a href="/prkms/tender/common/agent/indexTenderAgent">
+         <div class="btn_8">
+          決標查詢
+         </div>
+        </a>
+        <a href="/prkms/tender/common/bulletion/indexBulletion">
+         <div class="btn_8">
+          全文檢索
+         </div>
+        </a>
+        <a href="/prkms/tender/common/noticeDate/indexNoticeDate">
+         <div class="btn_8">
+          公告日期查詢
+         </div>
+        </a>
+        <a href="/prkms/tender/common/orgName/indexTenderOrgName">
+         <div class="btn_8">
+          機關名稱查詢
+         </div>
+        </a>
+        <a href="/prkms/tender/common/proctrg/indexTenderProctrg">
+         <div class="btn_8">
+          標的分類查詢
+         </div>
+        </a>
+        <a href="/prkms/tender/common/map/indexTenderMap">
+         <div class="btn_8">
+          招標公告地圖查詢
+         </div>
+        </a>
+        <a href="/opas/arpam/public/indexArpam">
+         <div class="btn_8">
+          財物出租查詢
+         </div>
+        </a>
+        <a href="/opas/aspam/public/indexAspam">
+         <div class="btn_8">
+          財物變賣查詢
+         </div>
+        </a>
+        <a href="/tps/tom/obtainment/common/printTokenPublic/printVerifyToken">
+         <div class="btn_8">
+          列印領標憑據
+         </div>
+        </a>
+       </div>
+       <!--結束-->
+       <!--快速連結-->
+       <div class="col-md-12" id="top_menu">
+       </div>
+       <!--結束-->
+       <section id="search_a">
+        查詢條件
+       </section>
+       <div class="title_1">
+        招標查詢
+       </div>
+       <!--表格開始-->
+       <form action="/prkms/tender/common/basic/readTenderBasic" id="basicTenderSearchForm" method="post">
+        <input id="pageSize" name="pageSize" title="pageSize" type="hidden" value="50"/>
+        <input id="firstSearch" name="firstSearch" title="firstSearch" type="hidden" value="false"/>
+        <input id="searchType" name="searchType" title="searchType" type="hidden" value="basic"/>
+        <input id="isBinding" name="isBinding" title="isBinding" type="hidden" value="N"/>
+        <input id="isLogIn" name="isLogIn" title="isLogIn" type="hidden" value="N"/>
+        <table class="tb_03c" summary="招標查詢">
+         <caption>
+          我要查詢標案
+         </caption>
+         <tr>
+          <td class="tb_s01" headers="a">
+          </td>
+          <td class="tb_s02" headers="a">
+           查詢方式
+          </td>
+          <td colspan="6" headers="a">
+           <div class="form-check">
+            <input checked="checked" id="level_11" name="level_1" title="level_1" type="radio"/>
+            <label for="level_11">
+             基本
+            </label>
+            <input id="level_12" name="level_1" onclick="javascript:location.href='/prkms/tender/common/advanced/indexTenderAdvanced'" title="level_1" type="radio"/>
+            <label for="level_12">
+             進階
+            </label>
+            <input id="level_13" name="level_1" onclick="javascript:location.href='/prkms/tender/common/updated/indexTenderUpdated'" title="level_1" type="radio"/>
+            <label for="level_13">
+             更正公告
+            </label>
+           </div>
+          </td>
+         </tr>
+         <tr>
+          <td class="tb_s01" headers="a">
+           <p class="at3">
+            @
+           </p>
+          </td>
+          <td class="tb_s02" headers="a">
+           <label for="dep">
+            機關名稱
+           </label>
+          </td>
+          <td class="g_tb_s03" headers="a">
+           <input class="form-control" id="orgName" name="orgName" title="機關名稱" type="text" value=""/>
+          </td>
+          <td class="tb_s04" headers="a">
+           <a href="/prkms/tender/common/orgName/indexTenderOrgName">
+            <div class="btn_4c">
+             查詢
+            </div>
+           </a>
+          </td>
+          <td class="tb_s01" headers="a">
+          </td>
+          <td class="tb_s02" headers="a">
+           <label for="depnb">
+            機關代碼
+           </label>
+          </td>
+          <td class="g_tb_s03" headers="a">
+           <input class="form-control" id="orgId" name="orgId" title="機關代碼" type="text" value="2.1"/>
+          </td>
+          <td class="tb_s04" headers="a">
+           <a href="/prkms/tender/common/orgName/indexTenderOrgName">
+            <div class="btn_4c">
+             查詢
+            </div>
+           </a>
+          </td>
+         </tr>
+         <tr>
+          <td class="tb_s01" headers="a">
+           <p class="at3">
+            @
+           </p>
+          </td>
+          <td class="tb_s02" headers="a">
+           <label for="case_name">
+            標案名稱
+           </label>
+          </td>
+          <td class="tb_s03" headers="a">
+           <input class="form-control" id="tenderName" name="tenderName" title="標案名稱" type="text" value=""/>
+          </td>
+          <td class="tb_s04" headers="a">
+           <a hidden="" href="javaScript:void(0);" title="按鈕">
+            按鈕
+           </a>
+          </td>
+          <td class="tb_s01" headers="a">
+          </td>
+          <td class="tb_s02" headers="a">
+           <label for="case_nb">
+            標案案號
+           </label>
+          </td>
+          <td class="tb_s03" headers="a">
+           <input class="form-control" id="tenderId" name="tenderId" title="標案案號" type="text" value=""/>
+          </td>
+          <td class="tb_s04" headers="a">
+           <a hidden="" href="javaScript:void(0);" title="按鈕">
+            按鈕
+           </a>
+          </td>
+         </tr>
+         <tr>
+          <td class="tb_s01" headers="a">
+           <p class="at3">
+            *
+           </p>
+          </td>
+          <td class="tb_s02" headers="a">
+           招標類型
+          </td>
+          <td class="tb_s05" colspan="2" headers="a">
+           <select class="form-select" id="tenderTypeSelect" name="tenderType" onchange="changeType(event,'/prkms/tender/common/basic/readTenderBasic')" title="招標類型">
+            <option selected="" value="TENDER_DECLARATION">
+             招標公告
+            </option>
+            <option value="SEARCH_APPEAL">
+             公開徵求
+            </option>
+            <option value="PUBLIC_READ">
+             公開閱覽
+            </option>
+            <option value="PREDICT">
+             政府採購預告
+            </option>
+           </select>
+          </td>
+          <td colspan="6" headers="a">
+           <span style="color:red">
+            (查詢條件包含「標案案號」時，可免填「公告日期」)
+           </span>
+          </td>
+         </tr>
+         <tr>
+          <td class="tb_s01" headers="a">
+           <p class="at3">
+            *
+           </p>
+          </td>
+          <td class="tb_s02" headers="a" id="tenderWayTitle">
+           招標方式
+          </td>
+          <td class="tb_s05" colspan="4" headers="a">
+           <select class="form-select" id="declarationSelect" name="tenderWay" onchange="tenderWayNotice(event);" title="招標方式">
+            <option selected="" value="TENDER_WAY_ALL_DECLARATION">
+             各式招標公告
+            </option>
+            <option value="TENDER_WAY_1">
+             公開招標
+            </option>
+            <option value="TENDER_WAY_12">
+             公開取得電子報價單
+            </option>
+            <option value="TENDER_WAY_2">
+             公開取得報價單或企劃書
+            </option>
+            <option value="TENDER_WAY_4">
+             經公開評選或公開徵求之限制性招標
+            </option>
+            <option value="TENDER_WAY_5">
+             選擇性招標(建立合格廠商名單)
+            </option>
+            <option value="TENDER_WAY_7">
+             選擇性招標(建立合格廠商名單後續邀標)
+            </option>
+            <option value="TENDER_WAY_3">
+             選擇性招標(個案)
+            </option>
+            <option value="TENDER_WAY_10">
+             電子競價
+            </option>
+            <option value="TENDER_WAY_6">
+             限制性招標(未經公開評選或公開徵求)
+            </option>
+           </select>
+          </td>
+         </tr>
+         <tr>
+          <td class="tb_s01" headers="a">
+          </td>
+          <td class="tb_s02" headers="a" id="dateTypeTitle">
+           公告日期
+          </td>
+          <td colspan="6" headers="a">
+           <div class="dateArea fddd">
+            <input checked="checked" id="level_21" name="dateType" title="當日" type="radio" value="isNow"/>
+            <label class="dateLabel" for="level_21">
+             當日
+            </label>
+            <input checked="checked" id="level_22" name="dateType" title="等標期內" type="radio" value="isSpdt"/>
+            <label class="dateLabel" for="level_22">
+             等標期內
+            </label>
+            <input id="level_23" name="dateType" title="日期區間" type="radio" value="isDate"/>
+           </div>
+           <div class="dateArea" id="tenderStartDateArea">
+           </div>
+           <div class="dateDiv">
+            —
+           </div>
+           <div class="dateArea" id="tenderEndDateArea">
+           </div>
+          </td>
+         </tr>
+         <tr>
+          <td class="tb_s01" headers="a">
+          </td>
+          <td class="tb_s02" headers="a">
+           採購性質
+          </td>
+          <td colspan="2" headers="a">
+           <input id="RadProctrgCate1" name="radProctrgCate" title="radProctrgCate" type="radio" value="RAD_PROCTRG_CATE_1"/>
+           <label for="RadProctrgCate1">
+            工程類
+           </label>
+           <input id="RadProctrgCate2" name="radProctrgCate" title="radProctrgCate" type="radio" value="RAD_PROCTRG_CATE_2"/>
+           <label for="RadProctrgCate2">
+            財物類
+           </label>
+           <input id="RadProctrgCate3" name="radProctrgCate" title="radProctrgCate" type="radio" value="RAD_PROCTRG_CATE_3"/>
+           <label for="RadProctrgCate3">
+            勞務類
+           </label>
+           <input checked="checked" id="RadProctrgCate4" name="radProctrgCate" title="radProctrgCate" type="radio" value=""/>
+           <label for="RadProctrgCate4">
+            不限
+           </label>
+          </td>
+         </tr>
+         <tr>
+          <td class="tb_s01" headers="a" rowspan="2">
+          </td>
+          <td class="tb_s02" headers="a" rowspan="2">
+           適用之條約或協定
+          </td>
+          <td class="tb_s05" colspan="2" headers="a">
+           <input id="gpa" name="gpa" title="適用WTO政府採購協定(GPA)" type="checkbox" value="true"/>
+           <label for="gpa">
+            適用WTO政府採購協定(GPA)
+           </label>
+          </td>
+          <td class="tb_s01" headers="a">
+          </td>
+          <td class="tb_s05" colspan="3" headers="a">
+           <input id="anztec" name="anztec" title="適用臺紐經濟合作協定(ANZTEC)" type="checkbox" value="true"/>
+           <label for="anztec">
+            適用臺紐經濟合作協定(ANZTEC)
+           </label>
+          </td>
+         </tr>
+         <tr>
+          <td class="tb_s05" colspan="6" headers="a">
+           <input id="astep" name="astep" title="適用臺星經濟夥伴協定(ASTEP)" type="checkbox" value="true"/>
+           <label for="astep">
+            適用臺星經濟夥伴協定(ASTEP)
+           </label>
+          </td>
+         </tr>
+         <tr>
+          <td class="tb_s01" headers="a">
+          </td>
+          <td class="tb_s02" headers="a">
+           是否為政策及業務宣導業務
+          </td>
+          <td colspan="2" headers="a">
+           <input class="form-check-input" id="level_15" name="policyAdvocacy" title="是否為政策及業務宣導業務" type="radio" value="Y"/>
+           <label class="form-check-label" for="level_15">
+            是
+           </label>
+           <input class="form-check-input" id="level_16" name="policyAdvocacy" title="是否為政策及業務宣導業務" type="radio" value="N"/>
+           <label class="form-check-label" for="level_16">
+            否
+           </label>
+           <input checked="checked" class="form-check-label" id="level_17" name="policyAdvocacy" title="是否為政策及業務宣導業務" type="radio" value=""/>
+           <label class="form-check-label" for="level_17">
+            不限
+           </label>
+          </td>
+         </tr>
+         <tr>
+          <td class="tb_s0" colspan="8" headers="a">
+           <div class="bt_cen2">
+            <a href="##" onclick="basicTenderSearch();" title="查詢">
+             查詢
+            </a>
+           </div>
+          </td>
+         </tr>
+         <tr>
+          <td colspan="8" headers="a">
+           <div class="search_note">
+            <table class="g_search_note" style="border-spacing: 0px;">
+             <tr>
+              <td class="no_blank">
+               註：
+              </td>
+              <td>
+               <span class="red">
+                ◎
+               </span>
+              </td>
+              <td>
+               符號
+               <span class="red">
+                *
+               </span>
+               代表必填,
+               <span class="red">
+                @
+               </span>
+               代表可填入關鍵字。
+              </td>
+             </tr>
+             <tr>
+              <td>
+              </td>
+              <td>
+               <span class="red">
+                ◎
+               </span>
+              </td>
+              <td>
+               若查不到已公告的資料，表示此案正在進行更正公告中。
+              </td>
+             </tr>
+             <tr>
+              <td>
+              </td>
+              <td>
+               <span class="red">
+                ◎
+               </span>
+              </td>
+              <td>
+               若欲以細項標的分類(如84電腦及相關服務) 查詢者，請使用『標的分類查詢』功能。
+              </td>
+             </tr>
+             <tr>
+              <td>
+              </td>
+              <td valign="top">
+               <span class="red">
+                ◎
+               </span>
+              </td>
+              <td>
+               國防部軍備局新增1個機關，生產製造中心機關代碼為3.5.10.100。
+              </td>
+             </tr>
+             <tr>
+              <td>
+              </td>
+              <td valign="top">
+               <span class="red">
+                ◎
+               </span>
+              </td>
+              <td>
+               功能使用請參考：首頁&gt;學習資源&gt;線上教學。
+              </td>
+             </tr>
+             <tr class="note_tenderWay12" style="display:none">
+              <td style="background-color: white;">
+              </td>
+              <td>
+               <span class="red">
+                ◎
+               </span>
+              </td>
+              <td>
+               招標方式選取「公開取得電子報價單」者，說明如下：
+               <br/>
+               <table>
+                <tbody>
+                 <tr>
+                  <td>
+                   1.
+                  </td>
+                  <td>
+                   只允許廠商電子領標、電子報價，不提供現場領標、現場投標。電子領標文件內容與招標公告內容不一致時，依政府採購法第41條規定，請向招標機關請求釋疑；如無請求釋疑，以招標公告為準。
+                  </td>
+                 </tr>
+                 <tr>
+                  <td>
+                   2.
+                  </td>
+                  <td>
+                   您必須擇一使用下列憑證，才能進行公開取得電子報價單作業。電子報價單如有不實，依政府採購法相關規定辦理。
+                   <br/>
+                   (1) 廠商本身名義之組織及團體憑證。
+                   <br/>
+                   (2) 廠商本身名義之工商憑證。
+                   <br/>
+                   (3) 廠商負責人之自然人憑證。
+                   <br/>
+                   (4) 廠商授權之職員之自然人憑證。
+                   <br/>
+                   註：利用自然人憑證投標須取得公司授權足以代表投標廠商。
+                  </td>
+                 </tr>
+                 <tr>
+                  <td>
+                   3.
+                  </td>
+                  <td>
+                   廠商（公司、商號、法人或團體）使用自然人憑證進行公開取得電子報價單作業者，其自然人憑證須先利用「資料維護及管理&gt;採購憑證設定」功能，以廠商本身名義之「工商憑證」或「組織及團體憑證」設定授權，以降低誤用或被冒名盜用之風險，增進電子採購之安全性。
+                  </td>
+                 </tr>
+                </tbody>
+               </table>
+              </td>
+             </tr>
+            </table>
+           </div>
+          </td>
+         </tr>
+        </table>
+       </form>
+       <!--表格結束-->
+      </div>
+      <!--搜尋結果列表-->
+      <!-- 標案查詢結果開始 -->
+      <!-- 標案查詢結果開始 -->
+      <!--下方找標案欄位結束-->
+      <!--搜尋結果列表-->
+      <div class="middle_1_cen_big_full r" id="printArea">
+       <section id="search_b">
+        查詢結果頁籤
+       </section>
+       <div class="title_1s">
+        查詢結果
+       </div>
+       <!--查詢結果備註-->
+       <div class="search_note">
+        <div class="search_note_l">
+         <table class="g_search_note">
+          <tr>
+           <td class="no_blank">
+            註：
+           </td>
+           <td>
+            <span class="red">
+             ◎
+            </span>
+           </td>
+           <td>
+            檢視招標公告，請點選標案名稱或傳輸次數欄位下方之序號，如招標公告01
+           </td>
+          </tr>
+          <tr>
+           <td>
+           </td>
+           <td>
+            <span class="red">
+             ◎
+            </span>
+           </td>
+           <td>
+            可檢視招標公告後，選擇電子領標按鈕
+           </td>
+          </tr>
+          <tr>
+           <td>
+           </td>
+           <td>
+            <span class="red">
+             ◎
+            </span>
+           </td>
+           <td>
+            查詢結果依公告日期遞減排序,即最新公告之標案在最上方
+           </td>
+          </tr>
+         </table>
+        </div>
+        <a href="javaScript:void(0);" onclick="printWin()" title="列印視窗">
+         <div class="search_print">
+          <img alt="友善列印" src="/prkms/images/print.jpg"/>
+          友善列印
+         </div>
+        </a>
+       </div>
+       <!--結束-->
+       <!--表格開始-->
+       <table class="tb_01" id="tpam">
+        <thead>
+         <tr>
+          <th class="th_b1 g_title no_blank">
+           項次
+          </th>
+          <th class="th_b2 g_title no_blank sortable">
+           <div style="display:table; width:100%">
+            <div style="display: table-cell; align-items: center; vertical-align: middle; width:100%">
+             <a href="?tenderEndDate=2024%2F03%2F27&amp;orgName=&amp;tenderName=&amp;d-49738-s=S_TENDER_ORG_NAME&amp;searchType=basic&amp;isBinding=N&amp;d-49738-p=1&amp;d-49738-o=2&amp;firstSearch=true&amp;pageSize=50&amp;radProctrgCate=&amp;tenderId=&amp;orgId=2.1&amp;isLogIn=N&amp;tenderStartDate=2024%2F03%2F211&amp;tenderType=TENDER_DECLARATION&amp;dateType=isSpdt&amp;tenderWay=TENDER_WAY_ALL_DECLARATION&amp;d-49738-n=1&amp;policyAdvocacy=&amp;level_1=on">
+              機關名稱
+             </a>
+            </div>
+            <div style=" float: right;display: inline-block;">
+             <div>
+              <a "="" href="?tenderEndDate=2024%2F03%2F27&amp;orgName=&amp;tenderName=&amp;d-49738-s=S_TENDER_ORG_NAME&amp;searchType=basic&amp;isBinding=N&amp;d-49738-p=1&amp;d-49738-o=2&amp;firstSearch=true&amp;pageSize=50&amp;radProctrgCate=&amp;tenderId=&amp;orgId=2.1&amp;isLogIn=N&amp;tenderStartDate=2024%2F03%2F211&amp;tenderType=TENDER_DECLARATION&amp;dateType=isSpdt&amp;tenderWay=TENDER_WAY_ALL_DECLARATION&amp;d-49738-n=1&amp;policyAdvocacy=&amp;level_1=on" style="display:block">
+               <span class="order1">
+               </span>
+              </a>
+              <a "="" href="?tenderEndDate=2024%2F03%2F27&amp;orgName=&amp;tenderName=&amp;d-49738-s=S_TENDER_ORG_NAME&amp;searchType=basic&amp;isBinding=N&amp;d-49738-p=1&amp;d-49738-o=1&amp;firstSearch=true&amp;pageSize=50&amp;radProctrgCate=&amp;tenderId=&amp;orgId=2.1&amp;isLogIn=N&amp;tenderStartDate=2024%2F03%2F211&amp;tenderType=TENDER_DECLARATION&amp;dateType=isSpdt&amp;tenderWay=TENDER_WAY_ALL_DECLARATION&amp;d-49738-n=1&amp;policyAdvocacy=&amp;level_1=on" style="display:block">
+               <span class="order2">
+               </span>
+              </a>
+             </div>
+            </div>
+           </div>
+          </th>
+          <th class="th_b3 g_title no_blank sortable">
+           <div style="display:table; width:100%">
+            <div style="display: table-cell; align-items: center; vertical-align: middle; width:100%">
+             <a href="?tenderEndDate=2024%2F03%2F27&amp;orgName=&amp;tenderName=&amp;d-49738-s=S_TENDER_CASE_NO&amp;searchType=basic&amp;isBinding=N&amp;d-49738-p=1&amp;d-49738-o=2&amp;firstSearch=true&amp;pageSize=50&amp;radProctrgCate=&amp;tenderId=&amp;orgId=2.1&amp;isLogIn=N&amp;tenderStartDate=2024%2F03%2F211&amp;tenderType=TENDER_DECLARATION&amp;dateType=isSpdt&amp;tenderWay=TENDER_WAY_ALL_DECLARATION&amp;d-49738-n=1&amp;policyAdvocacy=&amp;level_1=on">
+              標案案號
+              <br/>
+              標案名稱
+             </a>
+            </div>
+            <div style=" float: right;display: inline-block;">
+             <div>
+              <a "="" href="?tenderEndDate=2024%2F03%2F27&amp;orgName=&amp;tenderName=&amp;d-49738-s=S_TENDER_CASE_NO&amp;searchType=basic&amp;isBinding=N&amp;d-49738-p=1&amp;d-49738-o=2&amp;firstSearch=true&amp;pageSize=50&amp;radProctrgCate=&amp;tenderId=&amp;orgId=2.1&amp;isLogIn=N&amp;tenderStartDate=2024%2F03%2F211&amp;tenderType=TENDER_DECLARATION&amp;dateType=isSpdt&amp;tenderWay=TENDER_WAY_ALL_DECLARATION&amp;d-49738-n=1&amp;policyAdvocacy=&amp;level_1=on" style="display:block">
+               <span class="order1">
+               </span>
+              </a>
+              <a "="" href="?tenderEndDate=2024%2F03%2F27&amp;orgName=&amp;tenderName=&amp;d-49738-s=S_TENDER_CASE_NO&amp;searchType=basic&amp;isBinding=N&amp;d-49738-p=1&amp;d-49738-o=1&amp;firstSearch=true&amp;pageSize=50&amp;radProctrgCate=&amp;tenderId=&amp;orgId=2.1&amp;isLogIn=N&amp;tenderStartDate=2024%2F03%2F211&amp;tenderType=TENDER_DECLARATION&amp;dateType=isSpdt&amp;tenderWay=TENDER_WAY_ALL_DECLARATION&amp;d-49738-n=1&amp;policyAdvocacy=&amp;level_1=on" style="display:block">
+               <span class="order2">
+               </span>
+              </a>
+             </div>
+            </div>
+           </div>
+          </th>
+          <th class="th_b2 g_title no_blank sortable">
+           <div style="display:table; width:100%">
+            <div style="display: table-cell; align-items: center; vertical-align: middle; width:100%">
+             <a href="?tenderEndDate=2024%2F03%2F27&amp;orgName=&amp;tenderName=&amp;d-49738-s=S_TENDER_SQ&amp;searchType=basic&amp;isBinding=N&amp;d-49738-p=1&amp;d-49738-o=2&amp;firstSearch=true&amp;pageSize=50&amp;radProctrgCate=&amp;tenderId=&amp;orgId=2.1&amp;isLogIn=N&amp;tenderStartDate=2024%2F03%2F211&amp;tenderType=TENDER_DECLARATION&amp;dateType=isSpdt&amp;tenderWay=TENDER_WAY_ALL_DECLARATION&amp;d-49738-n=1&amp;policyAdvocacy=&amp;level_1=on">
+              <h1>
+               傳輸
+               <br/>
+               次數
+              </h1>
+             </a>
+            </div>
+            <div style=" float: right;display: inline-block;">
+             <div>
+              <a "="" href="?tenderEndDate=2024%2F03%2F27&amp;orgName=&amp;tenderName=&amp;d-49738-s=S_TENDER_SQ&amp;searchType=basic&amp;isBinding=N&amp;d-49738-p=1&amp;d-49738-o=2&amp;firstSearch=true&amp;pageSize=50&amp;radProctrgCate=&amp;tenderId=&amp;orgId=2.1&amp;isLogIn=N&amp;tenderStartDate=2024%2F03%2F211&amp;tenderType=TENDER_DECLARATION&amp;dateType=isSpdt&amp;tenderWay=TENDER_WAY_ALL_DECLARATION&amp;d-49738-n=1&amp;policyAdvocacy=&amp;level_1=on" style="display:block">
+               <span class="order1">
+               </span>
+              </a>
+              <a "="" href="?tenderEndDate=2024%2F03%2F27&amp;orgName=&amp;tenderName=&amp;d-49738-s=S_TENDER_SQ&amp;searchType=basic&amp;isBinding=N&amp;d-49738-p=1&amp;d-49738-o=1&amp;firstSearch=true&amp;pageSize=50&amp;radProctrgCate=&amp;tenderId=&amp;orgId=2.1&amp;isLogIn=N&amp;tenderStartDate=2024%2F03%2F211&amp;tenderType=TENDER_DECLARATION&amp;dateType=isSpdt&amp;tenderWay=TENDER_WAY_ALL_DECLARATION&amp;d-49738-n=1&amp;policyAdvocacy=&amp;level_1=on" style="display:block">
+               <span class="order2">
+               </span>
+              </a>
+             </div>
+            </div>
+           </div>
+          </th>
+          <th class="th_b2 g_title no_blank sortable">
+           <div style="display:table; width:100%">
+            <div style="display: table-cell; align-items: center; vertical-align: middle; width:100%">
+             <a href="?tenderEndDate=2024%2F03%2F27&amp;orgName=&amp;tenderName=&amp;d-49738-s=S_TENDER_WAY&amp;searchType=basic&amp;isBinding=N&amp;d-49738-p=1&amp;d-49738-o=2&amp;firstSearch=true&amp;pageSize=50&amp;radProctrgCate=&amp;tenderId=&amp;orgId=2.1&amp;isLogIn=N&amp;tenderStartDate=2024%2F03%2F211&amp;tenderType=TENDER_DECLARATION&amp;dateType=isSpdt&amp;tenderWay=TENDER_WAY_ALL_DECLARATION&amp;d-49738-n=1&amp;policyAdvocacy=&amp;level_1=on">
+              招標
+              <br/>
+              方式
+             </a>
+            </div>
+            <div style=" float: right;display: inline-block;">
+             <div>
+              <a "="" href="?tenderEndDate=2024%2F03%2F27&amp;orgName=&amp;tenderName=&amp;d-49738-s=S_TENDER_WAY&amp;searchType=basic&amp;isBinding=N&amp;d-49738-p=1&amp;d-49738-o=2&amp;firstSearch=true&amp;pageSize=50&amp;radProctrgCate=&amp;tenderId=&amp;orgId=2.1&amp;isLogIn=N&amp;tenderStartDate=2024%2F03%2F211&amp;tenderType=TENDER_DECLARATION&amp;dateType=isSpdt&amp;tenderWay=TENDER_WAY_ALL_DECLARATION&amp;d-49738-n=1&amp;policyAdvocacy=&amp;level_1=on" style="display:block">
+               <span class="order1">
+               </span>
+              </a>
+              <a "="" href="?tenderEndDate=2024%2F03%2F27&amp;orgName=&amp;tenderName=&amp;d-49738-s=S_TENDER_WAY&amp;searchType=basic&amp;isBinding=N&amp;d-49738-p=1&amp;d-49738-o=1&amp;firstSearch=true&amp;pageSize=50&amp;radProctrgCate=&amp;tenderId=&amp;orgId=2.1&amp;isLogIn=N&amp;tenderStartDate=2024%2F03%2F211&amp;tenderType=TENDER_DECLARATION&amp;dateType=isSpdt&amp;tenderWay=TENDER_WAY_ALL_DECLARATION&amp;d-49738-n=1&amp;policyAdvocacy=&amp;level_1=on" style="display:block">
+               <span class="order2">
+               </span>
+              </a>
+             </div>
+            </div>
+           </div>
+          </th>
+          <th class="th_b2 g_title no_blank sortable">
+           <div style="display:table; width:100%">
+            <div style="display: table-cell; align-items: center; vertical-align: middle; width:100%">
+             <a href="?tenderEndDate=2024%2F03%2F27&amp;orgName=&amp;tenderName=&amp;d-49738-s=S_PROCTRG_CATE&amp;searchType=basic&amp;isBinding=N&amp;d-49738-p=1&amp;d-49738-o=2&amp;firstSearch=true&amp;pageSize=50&amp;radProctrgCate=&amp;tenderId=&amp;orgId=2.1&amp;isLogIn=N&amp;tenderStartDate=2024%2F03%2F211&amp;tenderType=TENDER_DECLARATION&amp;dateType=isSpdt&amp;tenderWay=TENDER_WAY_ALL_DECLARATION&amp;d-49738-n=1&amp;policyAdvocacy=&amp;level_1=on">
+              採購
+              <br/>
+              性質
+             </a>
+            </div>
+            <div style=" float: right;display: inline-block;">
+             <div>
+              <a "="" href="?tenderEndDate=2024%2F03%2F27&amp;orgName=&amp;tenderName=&amp;d-49738-s=S_PROCTRG_CATE&amp;searchType=basic&amp;isBinding=N&amp;d-49738-p=1&amp;d-49738-o=2&amp;firstSearch=true&amp;pageSize=50&amp;radProctrgCate=&amp;tenderId=&amp;orgId=2.1&amp;isLogIn=N&amp;tenderStartDate=2024%2F03%2F211&amp;tenderType=TENDER_DECLARATION&amp;dateType=isSpdt&amp;tenderWay=TENDER_WAY_ALL_DECLARATION&amp;d-49738-n=1&amp;policyAdvocacy=&amp;level_1=on" style="display:block">
+               <span class="order1">
+               </span>
+              </a>
+              <a "="" href="?tenderEndDate=2024%2F03%2F27&amp;orgName=&amp;tenderName=&amp;d-49738-s=S_PROCTRG_CATE&amp;searchType=basic&amp;isBinding=N&amp;d-49738-p=1&amp;d-49738-o=1&amp;firstSearch=true&amp;pageSize=50&amp;radProctrgCate=&amp;tenderId=&amp;orgId=2.1&amp;isLogIn=N&amp;tenderStartDate=2024%2F03%2F211&amp;tenderType=TENDER_DECLARATION&amp;dateType=isSpdt&amp;tenderWay=TENDER_WAY_ALL_DECLARATION&amp;d-49738-n=1&amp;policyAdvocacy=&amp;level_1=on" style="display:block">
+               <span class="order2">
+               </span>
+              </a>
+             </div>
+            </div>
+           </div>
+          </th>
+          <th class="th_b2 g_title no_blank sortable">
+           <div style="display:table; width:100%">
+            <div style="display: table-cell; align-items: center; vertical-align: middle; width:100%">
+             <a href="?tenderEndDate=2024%2F03%2F27&amp;orgName=&amp;tenderName=&amp;d-49738-s=S_TARGET_DATE&amp;searchType=basic&amp;isBinding=N&amp;d-49738-p=1&amp;d-49738-o=2&amp;firstSearch=true&amp;pageSize=50&amp;radProctrgCate=&amp;tenderId=&amp;orgId=2.1&amp;isLogIn=N&amp;tenderStartDate=2024%2F03%2F211&amp;tenderType=TENDER_DECLARATION&amp;dateType=isSpdt&amp;tenderWay=TENDER_WAY_ALL_DECLARATION&amp;d-49738-n=1&amp;policyAdvocacy=&amp;level_1=on">
+              公告
+              <br/>
+              日期
+             </a>
+            </div>
+            <div style=" float: right;display: inline-block;">
+             <div>
+              <a "="" href="?tenderEndDate=2024%2F03%2F27&amp;orgName=&amp;tenderName=&amp;d-49738-s=S_TARGET_DATE&amp;searchType=basic&amp;isBinding=N&amp;d-49738-p=1&amp;d-49738-o=2&amp;firstSearch=true&amp;pageSize=50&amp;radProctrgCate=&amp;tenderId=&amp;orgId=2.1&amp;isLogIn=N&amp;tenderStartDate=2024%2F03%2F211&amp;tenderType=TENDER_DECLARATION&amp;dateType=isSpdt&amp;tenderWay=TENDER_WAY_ALL_DECLARATION&amp;d-49738-n=1&amp;policyAdvocacy=&amp;level_1=on" style="display:block">
+               <span class="order1">
+               </span>
+              </a>
+              <a "="" href="?tenderEndDate=2024%2F03%2F27&amp;orgName=&amp;tenderName=&amp;d-49738-s=S_TARGET_DATE&amp;searchType=basic&amp;isBinding=N&amp;d-49738-p=1&amp;d-49738-o=1&amp;firstSearch=true&amp;pageSize=50&amp;radProctrgCate=&amp;tenderId=&amp;orgId=2.1&amp;isLogIn=N&amp;tenderStartDate=2024%2F03%2F211&amp;tenderType=TENDER_DECLARATION&amp;dateType=isSpdt&amp;tenderWay=TENDER_WAY_ALL_DECLARATION&amp;d-49738-n=1&amp;policyAdvocacy=&amp;level_1=on" style="display:block">
+               <span class="order2">
+               </span>
+              </a>
+             </div>
+            </div>
+           </div>
+          </th>
+          <th class="th_b2 g_title no_blank sortable">
+           <div style="display:table; width:100%">
+            <div style="display: table-cell; align-items: center; vertical-align: middle; width:100%">
+             <a href="?tenderEndDate=2024%2F03%2F27&amp;orgName=&amp;tenderName=&amp;d-49738-s=S_SPDT&amp;searchType=basic&amp;isBinding=N&amp;d-49738-p=1&amp;d-49738-o=2&amp;firstSearch=true&amp;pageSize=50&amp;radProctrgCate=&amp;tenderId=&amp;orgId=2.1&amp;isLogIn=N&amp;tenderStartDate=2024%2F03%2F211&amp;tenderType=TENDER_DECLARATION&amp;dateType=isSpdt&amp;tenderWay=TENDER_WAY_ALL_DECLARATION&amp;d-49738-n=1&amp;policyAdvocacy=&amp;level_1=on">
+              截止
+              <br/>
+              投標
+             </a>
+            </div>
+            <div style=" float: right;display: inline-block;">
+             <div>
+              <a "="" href="?tenderEndDate=2024%2F03%2F27&amp;orgName=&amp;tenderName=&amp;d-49738-s=S_SPDT&amp;searchType=basic&amp;isBinding=N&amp;d-49738-p=1&amp;d-49738-o=2&amp;firstSearch=true&amp;pageSize=50&amp;radProctrgCate=&amp;tenderId=&amp;orgId=2.1&amp;isLogIn=N&amp;tenderStartDate=2024%2F03%2F211&amp;tenderType=TENDER_DECLARATION&amp;dateType=isSpdt&amp;tenderWay=TENDER_WAY_ALL_DECLARATION&amp;d-49738-n=1&amp;policyAdvocacy=&amp;level_1=on" style="display:block">
+               <span class="order1">
+               </span>
+              </a>
+              <a "="" href="?tenderEndDate=2024%2F03%2F27&amp;orgName=&amp;tenderName=&amp;d-49738-s=S_SPDT&amp;searchType=basic&amp;isBinding=N&amp;d-49738-p=1&amp;d-49738-o=1&amp;firstSearch=true&amp;pageSize=50&amp;radProctrgCate=&amp;tenderId=&amp;orgId=2.1&amp;isLogIn=N&amp;tenderStartDate=2024%2F03%2F211&amp;tenderType=TENDER_DECLARATION&amp;dateType=isSpdt&amp;tenderWay=TENDER_WAY_ALL_DECLARATION&amp;d-49738-n=1&amp;policyAdvocacy=&amp;level_1=on" style="display:block">
+               <span class="order2">
+               </span>
+              </a>
+             </div>
+            </div>
+           </div>
+          </th>
+          <th class="th_b3 g_title no_blank sortable">
+           <div style="display:table; width:100%">
+            <div style="display: table-cell; align-items: center; vertical-align: middle; width:100%">
+             <a href="?tenderEndDate=2024%2F03%2F27&amp;orgName=&amp;tenderName=&amp;d-49738-s=S_BUDGET&amp;searchType=basic&amp;isBinding=N&amp;d-49738-p=1&amp;d-49738-o=2&amp;firstSearch=true&amp;pageSize=50&amp;radProctrgCate=&amp;tenderId=&amp;orgId=2.1&amp;isLogIn=N&amp;tenderStartDate=2024%2F03%2F211&amp;tenderType=TENDER_DECLARATION&amp;dateType=isSpdt&amp;tenderWay=TENDER_WAY_ALL_DECLARATION&amp;d-49738-n=1&amp;policyAdvocacy=&amp;level_1=on">
+              預算
+              <br/>
+              金額
+             </a>
+            </div>
+            <div style=" float: right;display: inline-block;">
+             <div>
+              <a "="" href="?tenderEndDate=2024%2F03%2F27&amp;orgName=&amp;tenderName=&amp;d-49738-s=S_BUDGET&amp;searchType=basic&amp;isBinding=N&amp;d-49738-p=1&amp;d-49738-o=2&amp;firstSearch=true&amp;pageSize=50&amp;radProctrgCate=&amp;tenderId=&amp;orgId=2.1&amp;isLogIn=N&amp;tenderStartDate=2024%2F03%2F211&amp;tenderType=TENDER_DECLARATION&amp;dateType=isSpdt&amp;tenderWay=TENDER_WAY_ALL_DECLARATION&amp;d-49738-n=1&amp;policyAdvocacy=&amp;level_1=on" style="display:block">
+               <span class="order1">
+               </span>
+              </a>
+              <a "="" href="?tenderEndDate=2024%2F03%2F27&amp;orgName=&amp;tenderName=&amp;d-49738-s=S_BUDGET&amp;searchType=basic&amp;isBinding=N&amp;d-49738-p=1&amp;d-49738-o=1&amp;firstSearch=true&amp;pageSize=50&amp;radProctrgCate=&amp;tenderId=&amp;orgId=2.1&amp;isLogIn=N&amp;tenderStartDate=2024%2F03%2F211&amp;tenderType=TENDER_DECLARATION&amp;dateType=isSpdt&amp;tenderWay=TENDER_WAY_ALL_DECLARATION&amp;d-49738-n=1&amp;policyAdvocacy=&amp;level_1=on" style="display:block">
+               <span class="order2">
+               </span>
+              </a>
+             </div>
+            </div>
+           </div>
+          </th>
+          <th class="th_b2 g_title no_blank">
+           功能選項
+          </th>
+         </tr>
+        </thead>
+        <tbody>
+         <tr class="tb_b2">
+          <td class="no_blank" style="text-align:center;">
+           1
+          </td>
+          <td>
+           中央研究院
+          </td>
+          <td>
+           113-Y09
+           <br/>
+           <a href="/prkms/urlSelector/common/tpam?pk=NzA1NDgyMTI=">
+            <u>
+             <span id="1">
+              <script>
+               var hw = Geps3.CNS.pageCode2Img("中央研究院113年度消防安全設備檢修申報作業（含檢修耗材裝填補充）勞務採購案");$("#1").html(hw);
+              </script>
+             </span>
+            </u>
+           </a>
+          </td>
+          <td>
+           <a href="/prkms/urlSelector/common/tpam?pk=NzA1NDgyMTI=">
+            <u>
+             02
+            </u>
+           </a>
+          </td>
+          <td>
+           公開取得報價單或企劃書
+          </td>
+          <td class="no_blank">
+           勞務類
+          </td>
+          <td class="no_blank" style="text-align:center;">
+           113/03/25
+          </td>
+          <td class="no_blank" style="text-align:center;">
+           113/04/01
+          </td>
+          <td class="no_blank">
+           <span class="no_blank R">
+            432,800
+           </span>
+          </td>
+          <td>
+           <div class="bt_cen1 no_blank">
+            <a href="/prkms/urlSelector/common/tpam?pk=NzA1NDgyMTI=" title="檢視">
+             檢視
+            </a>
+           </div>
+          </td>
+         </tr>
+         <tr class="tb_b3">
+          <td class="no_blank" style="text-align:center;">
+           2
+          </td>
+          <td>
+           中央研究院
+          </td>
+          <td>
+           113-D04
+           <br/>
+           <a href="/prkms/urlSelector/common/tpam?pk=NzA1NDUxOTU=">
+            <u>
+             <span id="2">
+              <script>
+               var hw = Geps3.CNS.pageCode2Img("113年度院區機電設備管線巡檢維護作業委託案");$("#2").html(hw);
+              </script>
+             </span>
+            </u>
+           </a>
+          </td>
+          <td>
+           <a href="/prkms/urlSelector/common/tpam?pk=NzA1NDUxOTU=">
+            <u>
+             01
+            </u>
+           </a>
+          </td>
+          <td>
+           經公開評選或公開徵求之限制性招標
+          </td>
+          <td class="no_blank">
+           勞務類
+          </td>
+          <td class="no_blank" style="text-align:center;">
+           113/03/20
+          </td>
+          <td class="no_blank" style="text-align:center;">
+           113/04/18
+          </td>
+          <td class="no_blank">
+           <span class="no_blank R">
+            3,780,000
+           </span>
+          </td>
+          <td>
+           <div class="bt_cen1 no_blank">
+            <a href="/prkms/urlSelector/common/tpam?pk=NzA1NDUxOTU=" title="檢視">
+             檢視
+            </a>
+           </div>
+          </td>
+         </tr>
+         <tr class="tb_b2">
+          <td class="no_blank" style="text-align:center;">
+           3
+          </td>
+          <td>
+           中央研究院
+          </td>
+          <td>
+           iis-113-w-003
+           <br/>
+           <a href="/prkms/urlSelector/common/tpam?pk=NzA1NDQzNDE=">
+            <u>
+             <span id="3">
+              <script>
+               var hw = Geps3.CNS.pageCode2Img("新館316-317中央空調送風機設置工程");$("#3").html(hw);
+              </script>
+             </span>
+            </u>
+           </a>
+          </td>
+          <td>
+           <a href="/prkms/urlSelector/common/tpam?pk=NzA1NDQzNDE=">
+            <u>
+             01
+            </u>
+           </a>
+          </td>
+          <td>
+           公開取得報價單或企劃書
+          </td>
+          <td class="no_blank">
+           工程類
+          </td>
+          <td class="no_blank" style="text-align:center;">
+           113/03/19
+          </td>
+          <td class="no_blank" style="text-align:center;">
+           113/03/28
+          </td>
+          <td class="no_blank">
+           <span class="no_blank R">
+            600,000
+           </span>
+          </td>
+          <td>
+           <div class="bt_cen1 no_blank">
+            <a href="/prkms/urlSelector/common/tpam?pk=NzA1NDQzNDE=" title="檢視">
+             檢視
+            </a>
+           </div>
+          </td>
+         </tr>
+        </tbody>
+       </table>
+       <div class="page" id="displaytagBannerDiv">
+        <span id="pagebanner">
+         共有
+         <span class="red">
+          3
+         </span>
+         筆資料
+        </span>
+        <span>
+         【第一頁/上一頁】
+        </span>
+        <a class="pageact">
+         1
+        </a>
+        <span id="pagelinks">
+         【下一頁/最後一頁】
+        </span>
+       </div>
+       <div class="page">
+        <span>
+         一頁顯示
+        </span>
+        <select id="pageSizeSelector" name="pageSize" style="width: 70px">
+         <option value="10">
+          10
+         </option>
+         <option value="20">
+          20
+         </option>
+         <option selected="" value="50">
+          50
+         </option>
+         <option value="100">
+          100
+         </option>
+        </select>
+        筆資料
+       </div>
+       <!--換頁結束-->
+       <!--換頁結束-->
+       <section id="search_c">
+        查詢頁尾
+       </section>
+      </div>
+      <!-- 標案查詢結果結束 -->
+      <script>
+       function initTable() {
+
+	var index = 0;
+
+	var authType = 'common';
+
+	if('vendor' == authType)
+		index += 1;
+	
+	$('#tpam thead tr').addClass("tb_b1");
+	$('#tpam tr td:nth-child('+(1+index)+')').addClass("tc");
+	$('#tpam tr td:nth-child('+(3+index)+')').addClass("tl");
+	$('#tpam tr td:nth-child('+(4+index)+')').addClass("tc");
+	$('#tpam tr td:nth-child('+(7+index)+')').addClass("tc");
+	$('#tpam tr td:nth-child('+(8+index)+')').addClass("tc");
+	$('#tpam tr td:nth-child('+(9+index)+')').addClass("t_r");
+	$('#tpam tr td:last-child').addClass("t_r");
+	
+	$('tr th:eq('+(index)+')').css({
+		"width" : "5%"
+	});
+	$('tr th:eq('+(1+index)+')').css({
+		"width" : "15%"
+	});
+	$('tr th:eq('+(2+index)+')').css({
+		"width" : "26%"
+	});
+	$('tr th:eq('+(3+index)+')').css({
+		"width" : "5%"
+	});
+	$('tr th:eq('+(4+index)+')').css({
+		"width" : "10%"
+	});
+	$('tr th:eq('+(5+index)+')').css({
+		"width" : "8%"
+	});
+	$('tr th:eq('+(6+index)+')').css({
+		"width" : "9%"
+	});
+	$('tr th:eq('+(7+index)+')').css({
+		"width" : "9%"
+	});
+	$('tr th:eq('+(8+index)+')').css({
+		"width" : "13%"
+	});
+}
+      </script>
+      <!-- 標案查詢結果結束 -->
+      <!-- 公開徵求查詢結果開始 -->
+      <!-- 公開徵求查詢結果結束 -->
+      <!-- 公開閱覽查詢結果開始 -->
+      <!-- 公開閱覽查詢結果結束 -->
+      <!--採購預告查詢結果開始 -->
+      <!--採購預告查詢結果結束 -->
+      <div class="r_btn">
+       <div class="r_btn_1a">
+        <a href="#search_a">
+         查詢條件
+        </a>
+       </div>
+       <div class="r_btn_1b">
+        <a href="#search_b">
+         查詢結果
+        </a>
+       </div>
+       <div class="r_btn_1c">
+        <a href="#search_c">
+         查詢頁尾
+        </a>
+       </div>
+      </div>
+      <!--浮動按鈕結束-->
+      <!--左邊內容結束-->
+      <script type="text/javascript">
+       var component1;
+var component2;
+
+	$(document).ready(function() {
+		adjustPagebanner();
+		commonInit();
+		//標案查尋頁查詢結果回到標案查尋頁
+		changeFormUrlBySelected($('#tenderTypeSelect'), '/prkms/tender/common/basic/readTenderBasic');
+		pageSizeChanger();
+		$('.page a').click(function(e){
+			e.preventDefault(); 
+			var href = $(this).attr("href");
+			window.location=href.replace("firstSearch=true", "firstSearch=false"); 
+			});
+		if(false)
+			showCheckFailure("");
+		component1.rePosition();
+		component2.rePosition();
+		scrollToResult();
+		clickTenderDate();
+// 		若使用tenderId則可不使用日期搜尋
+		$('#tenderId').change(function(){
+			if($('#tenderId').val() != ''){
+			  $('#level_23').prop("checked",true);
+			  $('#tenderStartDateArea input').val('');
+			  $('#tenderEndDateArea input').val('');
+				}
+		});
+
+		initNoticeDateMark();
+	});
+
+	
+//拉到
+
+	function adjustPagebanner() {
+		var pagebanner = $('#pagebanner').clone();
+		$('#pagebanner').remove();
+		$('#pagelinks').after(pagebanner);
+	}
+
+	function basicTenderSearch() {
+		if($("input[name='dateType']:checked").val() == 'isDate') {
+			if($('#tenderId').val() == "" && ($("input[name='tenderStartDate']").val() == "" || $("input[name='tenderEndDate']").val() == "")
+					|| ($("input[name='tenderStartDate']").val() != "" && $("input[name='tenderEndDate']").val() == "")
+					|| ($("input[name='tenderStartDate']").val() == "" && $("input[name='tenderEndDate']").val() != "")) {
+				showCheckFailure("請選擇公告日期");
+				return;
+			}
+
+			var startDate;
+			var endDate;
+			switch ($("#tenderTypeSelect").val()) {
+			  case 'TENDER_DECLARATION':
+					startDate = parseInt($("input[name='tenderStartDate']").val().replace(/\//g,""), 10);
+					endDate = parseInt($("input[name='tenderEndDate']").val().replace(/\//g,""), 10); 
+				break;
+			  case 'SEARCH_APPEAL':
+					startDate = parseInt($("input[name='startDate']").val().replace(/\//g,""), 10);
+					endDate = parseInt($("input[name='endDate']").val().replace(/\//g,""), 10); 
+				break;
+			  case 'PUBLIC_READ':
+					startDate = parseInt($("input[name='queryStartDate']").val().replace(/\//g,""), 10);
+					endDate = parseInt($("input[name='queryEndDate']").val().replace(/\//g,""), 10); 
+			    break;
+			  case 'PREDICT':
+					startDate = parseInt($("input[name='predictNoticeDateStart']").val().replace(/\//g,""), 10);
+					endDate = parseInt($("input[name='predictNoticeDateEnd']").val().replace(/\//g,""), 10); 
+				break;
+			}
+
+			if(startDate>endDate){
+				showCheckFailure("公告日期 起始日期大於終止日期");
+				return;
+			}
+
+			var y1 = Math.floor(startDate/10000)+1911;
+			var m1 = Math.floor(startDate%10000/100);
+			var d1 = startDate%100;
+			var date1 = new Date(y1+"-"+m1+"-"+d1);
+			var y2 = Math.floor(endDate/10000)+1911;
+			var m2 = Math.floor(endDate%10000/100);
+			var d2 = endDate%100;
+			var date2 = new Date(y2+"-"+m2+"-"+d2);
+			var iDays = parseInt(Math.abs(date1 - date2) / 1000 / 60 / 60 / 24);
+			
+			var isBinding = $('#isBinding').val();
+			var isLogIn = $('#isLogIn').val();
+			if(null == isBinding || '' == isBinding){
+				isBinding = 'N';
+				$('#isBinding').val('N');
+			}
+			if(null == isLogIn || '' == isLogIn){
+				isLogIn = 'N';
+				$('#isLogIn').val('N');
+			}
+			
+			//未登入 未綁定
+			if(iDays > 186 && "Y" != isBinding && "Y" != isLogIn) {
+				window.location="/prkms/tender/common/bulletion/indexBulletion?showMessage=Y";
+				return;
+			}
+			//登入 未綁定
+			else if (iDays > 365 && "Y" != isBinding && "Y" == isLogIn){
+				window.location="/prkms/tender/common/bulletion/indexBulletion?showMessage=Y";
+				return;
+			}
+			//other 登入 綁定
+			else if(iDays > 730 && "Y" == isBinding && "Y" == isLogIn){
+				window.location="/prkms/tender/common/bulletion/indexBulletion?showMessage=Y";
+				return;
+			}
+			
+		}
+		
+		$('#firstSearch').val("true");
+		// use get to avoid ERR_CACHE_MISS
+// 		$('#basicTenderSearchForm').submit();
+		window.location = $('#basicTenderSearchForm').attr("action") + "?" + $('#basicTenderSearchForm').serialize();
+	}
+
+	function commonInit() {
+
+		var tenderQueryConfiga = {
+			element : document.getElementById('tenderStartDateArea'),
+			type : 'yyy/MM/dd',
+			defaultValue : '2024\/03\/211',
+			attr : {id : 'tenderStartDate' , name : 'tenderStartDate' , class : 'form-date g_form-date'}
+		}
+		component1 = new Geps3.DatePicker(tenderQueryConfiga);
+
+		var tenderQueryConfigaa = {
+			element : document.getElementById('tenderEndDateArea'),
+			type : 'yyy/MM/dd',
+			defaultValue : '2024\/03\/27',
+			attr : {id : 'tenderEndDate' , name : 'tenderEndDate' , class : 'form-date g_form-date'}
+		}
+		component2 = new Geps3.DatePicker(tenderQueryConfigaa);
+
+		$('.f_20').css({
+			"width" : "100%"	
+		});
+
+	}
+
+	function clickTenderDate(){
+		var startDate = $('div#tenderStartDateArea');
+		var endDate = $('div#tenderEndDateArea');
+		var dateArray = [];
+
+		dateArray.push(startDate);
+		dateArray.push(endDate);
+		$.each(dateArray, function(index, value){
+			$(this).on('click', function(){
+				$('input#level_23').prop('checked', true);
+			});
+		});
+	}
+      </script>
+      <!--登入區塊 -->
+      <!--登入區塊結束 -->
+     </div>
+    </div>
+   </div>
+   <!--頁簽-->
+   <!--頁簽結束-->
+   <!--footer-->
+   <!--footer-->
+   <div class="footer">
+    <div class="footer_a_cen">
+     <a accesskey="Z" class="z-acceky" href="#Z" name="Z" title="下方相關連結區">
+      :::
+     </a>
+     <div class="footer_a_cen">
+      <div class="footer_a">
+       <img alt="行政院工程委員會商標圖" src="/pis/images/minor_logo.png"/>
+       <a href="https://accessibility.moda.gov.tw/Applications/Detail?category=20230224201311" target="_blank" title="無障礙網站(另開視窗)">
+        <img alt="通過A無障礙網頁檢測" border="0" height="31" src="/pis/images/ap2.0.png" width="88"/>
+       </a>
+      </div>
+      <div class="footer_a">
+       <div class="footer_a1">
+        <div class="footer_a1_1">
+         <p>
+          免費系統客服電話：0800-080-512
+         </p>
+         <p>
+          工程會電話：(02)87897500
+         </p>
+         <p>
+          採購申訴審議委員會電話：(02)87897530
+         </p>
+         <p>
+          政府電子採購網 版權所有 © 2021
+         </p>
+        </div>
+        <div class="footer_a1_2">
+         <p>
+          系統客服傳真：02-33229691
+         </p>
+         <p>
+          工程會地址：110臺北市信義區松仁路3號9樓
+         </p>
+         <p>
+          中央採購稽核小組電話：(02)87897548
+         </p>
+         <p>
+          歡迎本區第
+          <span>
+           <strong class="counterValue">
+           </strong>
+          </span>
+          位訪客(至098/12/31累計76003935人次)
+         </p>
+        </div>
+        <div class="footer_a1_3">
+         <p>
+          緊急聯絡電話：(07)2280795
+         </p>
+         <br/>
+         <br/>
+         <p>
+          傳真：(02)87897554
+         </p>
+        </div>
+       </div>
+       <div class="footer_a2">
+        <a class="qrcode_preview" href="/pis/images/RWD_QRcode_L_1080328.jpg" title="手機上網領標QR Code二維條碼">
+         <img alt="行動版QR Code圖示" src="/pis/images/qr.jpg"/>
+        </a>
+       </div>
+      </div>
+      <div style="height: 30px">
+      </div>
+      <div class="footer_a">
+       <div class="col-lg-2">
+        <p>
+         <img alt="" src="/prkms/images/link.png"/>
+         <a href="/pis/pia/client/mail" style="color: #fff" title="聯絡我們">
+          聯絡我們
+         </a>
+        </p>
+       </div>
+       <div class="col-lg-2">
+        <p>
+         <img alt="" src="/prkms/images/link.png"/>
+         <a href="/pis/prac/declarationClient/right" style="color: #fff" title="著作權聲明">
+          著作權聲明
+         </a>
+        </p>
+       </div>
+       <div class="col-lg-2">
+        <p>
+         <img alt="" src="/prkms/images/link.png"/>
+         <a href="/pis/prac/declarationClient/accessibility" style="color: #fff" title="無障礙聲明">
+          無障礙聲明
+         </a>
+        </p>
+       </div>
+       <div class="col-lg-2">
+        <p>
+         <img alt="" src="/prkms/images/link.png"/>
+         <a href="/pis/prac/declarationClient/security" style="color: #fff" title="安全保護聲明">
+          安全保護聲明
+         </a>
+        </p>
+       </div>
+       <div class="col-lg-2">
+        <p>
+         <img alt="" src="/prkms/images/link.png"/>
+         <a href="/pis/prac/declarationClient/private" style="color: #fff" title="個人隱私聲明">
+          個人隱私聲明
+         </a>
+        </p>
+       </div>
+       <div class="col-lg-2">
+        <p>
+         <img alt="" src="/prkms/images/link.png"/>
+         <a href="/osm/public/sysDownRcd" style="color: #fff" title="停機紀錄">
+          停機紀錄
+         </a>
+        </p>
+       </div>
+      </div>
+     </div>
+     <div class="footer_b">
+      <!--       <div class="col-lg-6"> -->
+      <!--         <div class="footer_text_a">政府電子採購網  版權所有 © 2020</div> -->
+      <!--       </div> -->
+      <!--       <div class="col-lg-6"> -->
+      <!--         <div class="footer_text_b">歡迎本區第 <span><strong class="counterValue"></strong></span> 位訪客(至098/12/31累計76003935人次)</div> -->
+      <!--       </div> -->
+      <div class="col-lg-6">
+       <div class="footer_text_a">
+        支援瀏覽器版本為Edge，及Firefox及Chrome瀏覽器解析度1280 X 960
+       </div>
+      </div>
+      <div class="col-lg-6">
+       <div class="footer_text_b">
+        台灣時間為
+        <span id="nowTimeSpan">
+        </span>
+       </div>
+      </div>
+     </div>
+     <!--頁腳內容導盲磚-->
+    </div>
+   </div>
+   <!--<a href="#Z" class="guide" id="AZ" title="下方選單連結區，此區塊列有[聯絡我們]、[著作權聲明]、[無障礙聲明]等連結" accesskey="Z" name="Z">:::</a> -->
+   <!--footerEND-->
+   <script type="text/javascript">
+    $(document).ready(function() {
+		generateNowTime();
+		setInterval("generateNowTime()", 10000);
+		
+		// 20110714 顯示訪客人數
+		var isT5Env = '';
+		if(isT5Env != 'Y') {
+			getCounterValue(); 
+		}
+	
+	});
+
+	function generateNowTime() {
+		var time = new Date() ;
+		var nowstr = time.getHours() + '點' + time.getMinutes() + '分';
+		$("#nowTimeSpan").text(nowstr);
+	}
+	
+	function getCounterValue(){
+		jQuery.ajax({
+					url: "/pis/pia/client/counter/counterValue?refresh=Y",
+					type: "POST",
+					dataType: "html",
+					timeout:30000,
+					error: function(XMLHttpRequest, textStatus, errorThrown){
+						if (textStatus == 'timeout'){
+							// timeout
+							jQuery('strong.counterValue').text('');
+						}else{
+							// error
+							jQuery('strong.counterValue').text('error');
+						}
+						ajaxEvent = false;
+					},
+					beforeSend: function(){
+						// busy
+						ajaxEvent = true;			
+			   		},
+			   		complete: function(){
+			   			ajaxEvent = false;
+			   		},
+					success: function(doc){
+						if(doc.toLowerCase){
+							if(doc.toLowerCase().indexOf("</body>")!=-1){			   				
+								window.location.href="/pis";
+							}else{
+								jQuery('strong.counterValue').text(doc);
+							}
+						}					
+					}
+				});
+	}
+	
+	function refreshNewCount(){
+
+		jQuery.ajax({
+					url: "/pis/pia/client/counter/refreshNewCount?refresh=Y",
+					type: "POST",
+					dataType: "html",
+					timeout:30000,
+					error: function(XMLHttpRequest, textStatus, errorThrown){
+						if (textStatus == 'timeout'){
+							// timeout
+							jQuery('strong.counterValue').text('');
+						}else{
+							// error
+							jQuery('strong.counterValue').text('error');
+						}
+						ajaxEvent = false;
+					},
+					beforeSend: function(){
+						// busy
+						ajaxEvent = true;			
+			   		},
+			   		complete: function(){
+			   			ajaxEvent = false;
+			   		},
+					success: function(doc){
+						ajaxEvent = false;			
+					}
+				});
+	}
+	
+	function goTender(){
+		refreshNewCount();
+		window.location.href = "/prkms/tender/common/basic/indexTenderBasic";
+	}
+   </script>
+   <!--footerEND-->
+   <!--首頁下拉選單的JS-->
+   <script>
+    $(".selemenu").click(function(){
+	$(this).next().slideToggle();
+	$(this).parents().siblings().find(".citylist,.citylist2").slideUp();
+	})
+
+
+	$(function() {
+		//設定TITLE
+		var loginBreadcrumbsArr = $("#loginBreadcrumbs").text().split('>');
+
+		if (loginBreadcrumbsArr.length >= 1) {
+
+			document.title = '政府電子採購網-' + loginBreadcrumbsArr[loginBreadcrumbsArr.length - 1];
+
+			if (loginBreadcrumbsArr[loginBreadcrumbsArr.length - 1].trim() == '') {
+				var lnetTrackArr = $("#netTrack").text().split('>');
+				console.log('netTrack' + $("#netTrack").text());
+
+				document.title = '政府電子採購網-' + lnetTrackArr[lnetTrackArr.length - 1];
+			}
+
+		}
+	});
+   </script>
+  </div>
+ </body>
+</html>
